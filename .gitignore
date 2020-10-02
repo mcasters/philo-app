@@ -1,0 +1,14 @@
+logs
+.idea
+coverage
+node_modules
+notes
+build
+
+*.log
+npm-debug.log*
+.DS_Store
+.editorconfig
+.env.local
+package-lock.json
+

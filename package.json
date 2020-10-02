@@ -1,0 +1,43 @@
+{
+  "name": "philo-app",
+  "version": "1.0.0",
+  "description": "A server-rendered React app built on Razzle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcasters/philo-app.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcasters/philo-app/issues"
+  },
+  "homepage": "https://github.com/mcasters/philo-app#readme",
+  "dependencies": {
+    "@jaredpalmer/after": "^3.1.2",
+    "after": "^0.8.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "lodash": "^4.17.20",
+    "prop-types": "^15.7.2",
+    "razzle": "^3.3.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "prettier": "2.1.1"
+  }
+}
