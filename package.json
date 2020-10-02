@@ -4,14 +4,17 @@
   "description": "A server-rendered React app built on Razzle",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "razzle start",
+    "build": "razzle build",
+    "test": "razzle test --env=jsdom",
+    "start:prod": "NODE_ENV=production node build/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mcasters/philo-app.git"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "mcasters",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/mcasters/philo-app/issues"
   },

@@ -1,0 +1,9 @@
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 0 var(--side-padding);
+    background-color: var(--color-xxlight);
+    box-shadow: 0 2px 5px rgba(100, 100, 100, 0.03);
+    border-bottom: 1px solid var(--color-xlight);
+}
+
