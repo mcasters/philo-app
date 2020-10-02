@@ -3,6 +3,8 @@ import {Helmet} from 'react-helmet';
 import PropTypes from 'prop-types';
 
 import s from './Layout.module.css';
+import Footer from "./footer/Footer";
+import Nav from "./navigation/Nav";
 
 const Layout = ({children, title = 'This is the default title'}) =>
     <>
@@ -15,8 +17,10 @@ const Layout = ({children, title = 'This is the default title'}) =>
             />
         </Helmet>
         <header className={s.header}>
+            <Nav />
         </header>
         <main>{children}</main>
+        <Footer />
     </>;
 
 

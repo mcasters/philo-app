@@ -1,0 +1,73 @@
+.nav {
+    position: relative;
+    display: flex;
+    height: var(--nav-height);
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    line-height: 0;
+    letter-spacing: 0.2em;
+    transition: all 1.2s ease;
+    margin: 0;
+}
+
+.stickyTitle {
+    opacity: 0.2;
+    letter-spacing: 0.8em;
+    transition: all 1.2s ease;
+}
+
+.logo {
+    position: absolute;
+    top: 6px;
+    left: 200px;
+    opacity: 0;
+    width: 28px;
+    transition: all 1.2s ease;
+}
+
+.logoSticky {
+    left: 0;
+    opacity: 1;
+    transition: all 1.2s ease;
+}
+
+.homeLink {
+    display: inline-block;
+    width: 30%;
+}
+
+.homeLink:hover {
+    transform: none;
+}
+
+.link {
+    padding: 0 1em;
+    font-size: var(--font-size-current-plus-plus);
+    transition: all 1.2s ease;
+    font-variant: small-caps;
+}
+
+.link:hover,
+.link:active,
+.active {
+    color: var(--color-xxdark);
+    font-weight: 300;
+    letter-spacing: 0.5em;
+    transition: all 1.2s ease;
+}
+
+.active:hover {
+    transform: scale(1.1);
+}
+
+@media (--lg) {
+    .logo {
+        width: 35px;
+    }
+}
