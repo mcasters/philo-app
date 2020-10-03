@@ -2,19 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import logo from '../react.svg';
-import './Home.css';
+import s from './Home.module.css';
 import CustomEditor from "../components/rich-text-editor/CustomEditor";
+import RichTextEditor from "../components/rich-text-editor/RichTextEditor";
 
 const Home = ({content}) => {
 
 
     return (
-        <div className="Home">
-            <div className="Home-header">
-                <img src={logo} className="Home-logo" alt="logo"/>
+        <div className={s.home}>
+            <div className={s.header}>
+                <img src={logo} className={s.homeLogo} alt="logo"/>
                 <h2>{content}</h2>
             </div>
-            <CustomEditor/>
+            <RichTextEditor />
         </div>
     );
 };
