@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 import logo from '../react.svg';
 import s from './Home.module.css';
-import CustomEditor from "../components/rich-text-editor/CustomEditor";
 import RichTextEditor from "../components/rich-text-editor/RichTextEditor";
 
 const Home = ({content}) => {
