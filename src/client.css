@@ -380,9 +380,6 @@ html {
 }
 
 html,
-h3,
-h4,
-h5,
 input,
 button,
 select,
@@ -392,12 +389,6 @@ textarea {
   color: var(--color-xdark);
   font-weight: lighter;
   font-variant: small-caps;
-  letter-spacing: 0.4em;
-}
-
-h1,
-h2 {
-  font-weight: lighter;
   letter-spacing: 0.4em;
 }
 
