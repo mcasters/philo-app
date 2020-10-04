@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import s from './Layout.module.css';
 import Footer from "./footer/Footer";
 import Nav from "./navigation/Nav";
+import Aside from "./aside/Aside";
 
 const Layout = ({children, title = 'This is the default title'}) =>
     <>
@@ -19,7 +20,8 @@ const Layout = ({children, title = 'This is the default title'}) =>
         <header className={s.header}>
             <Nav />
         </header>
-        <main>{children}</main>
+        <Aside />
+        <main className={s.main}>{children}</main>
         <Footer />
     </>;
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import logo from '../react.svg';
 import s from './Home.module.css';
 import RichTextEditor from "../components/rich-text-editor/RichTextEditor";
 
@@ -10,10 +9,6 @@ const Home = ({content}) => {
 
     return (
         <div className={s.home}>
-            <div className={s.header}>
-                <img src={logo} className={s.homeLogo} alt="logo"/>
-                <h2>{content}</h2>
-            </div>
             <RichTextEditor />
         </div>
     );
