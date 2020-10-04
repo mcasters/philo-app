@@ -1,14 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import {Helmet} from 'react-helmet';
 import PropTypes from 'prop-types';
 
 import s from './Layout.module.css';
 import Footer from "./footer/Footer";
 import Nav from "./navigation/Nav";
+import {AsideContext, AsideContextProvider} from "../asideContext/AsideContextProvider";
 import Aside from "./aside/Aside";
 
-const Layout = ({children, title = 'This is the default title'}) =>
-    <>
+const Layout = ({children, title = 'This is the default title'}) => {
+    const [withAside, setWithAside] = useState(false);
+
+    return <>
         <Helmet>
             <title>{title}</title>
             <meta charSet="utf-8"/>
@@ -18,12 +21,17 @@ const Layout = ({children, title = 'This is the default title'}) =>
             />
         </Helmet>
         <header className={s.header}>
-            <Nav />
+            <Nav/>
         </header>
-        <Aside />
-        <main className={s.main}>{children}</main>
-        <Footer />
+        <AsideContextProvider>
+            <AsideContext.Consumer>
+                {(context) => (<Aside folderList={context.folderList}/>)}
+            </AsideContext.Consumer>
+            <main className={s.main}>{children}</main>
+        </AsideContextProvider>
+        <Footer/>
     </>;
+};
 
 
 Layout.propTypes = {
