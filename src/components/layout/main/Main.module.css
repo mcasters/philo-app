@@ -1,5 +1,7 @@
-.content {
+.main {
     padding-top: var(--main-top-padding);
     padding-left: var(--side-padding);
     padding-right: var(--side-padding);
+    display: inline-block;
+    width: 72%;
 }

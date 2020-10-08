@@ -14,11 +14,6 @@ const Nav = () => {
                 if (PATH === ROUTES.HOME)
                     return (
                         <Link key={PATH} to={PATH} className={s.homeLink}>
-                            <h1
-                                className={s.title}
-                            >
-                                Marion Casters
-                            </h1>
                             <img
                                 src={logo}
                                 alt="logo"

@@ -15,5 +15,5 @@ export default function Aside({folderList}) {
 }
 
 Aside.propTypes = {
-    folderList: PropTypes.array,
+    folderList: PropTypes.array.isRequired,
 };

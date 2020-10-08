@@ -7,6 +7,7 @@ import Footer from "./footer/Footer";
 import Nav from "./navigation/Nav";
 import {AsideContext, AsideContextProvider} from "../asideContext/AsideContextProvider";
 import Aside from "./aside/Aside";
+import Main from "./main/Main";
 
 const Layout = ({children, title = 'This is the default title'}) => {
     const [withAside, setWithAside] = useState(false);
@@ -25,9 +26,9 @@ const Layout = ({children, title = 'This is the default title'}) => {
         </header>
         <AsideContextProvider>
             <AsideContext.Consumer>
-                {(context) => (<Aside folderList={context.folderList}/>)}
+                {(context) => (<Aside className={s.aside} folderList={context.folderList}/>)}
             </AsideContext.Consumer>
-            <main className={s.main}>{children}</main>
+            <Main className={s.main}>{children}</Main>
         </AsideContextProvider>
         <Footer/>
     </>;

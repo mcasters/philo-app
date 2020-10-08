@@ -6,8 +6,3 @@
     box-shadow: 0 2px 5px rgba(100, 100, 100, 0.03);
     border-bottom: 1px solid var(--color-xlight);
 }
-
-.main {
-    display: inline-block;
-    width: 75%;
-}

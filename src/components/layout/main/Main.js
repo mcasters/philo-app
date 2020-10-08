@@ -8,7 +8,7 @@ const Main = ({ children }) => {
     const height = useWindowHeight();
 
     return (
-        <main style={{ height }} className={s.content}>
+        <main style={{ height }} className={s.main}>
             {children}
         </main>
     );

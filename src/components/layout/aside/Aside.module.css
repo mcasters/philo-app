@@ -1,4 +1,7 @@
 .aside {
-  display: inline-block;
-  width: 25%;
+    display: inline-block;
+    width: 25%;
+}
+
+.container {
 }
